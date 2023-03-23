@@ -1,5 +1,5 @@
 {
-  "name": "vault-management",
+  "name": "vault_management",
   "version": "0.1.0",
   "private": true,
   "scripts": {
