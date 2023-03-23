@@ -1,6 +1,6 @@
 module.exports = {
-    purge: [], // Add your purge configuration here
-    darkMode: false, // or 'media' or 'class'
+    content: [], // Add your purge configuration here
+    darkMode: 'media', // or 'media' or 'class'
     theme: {
       extend: {
         backgroundColor: {
