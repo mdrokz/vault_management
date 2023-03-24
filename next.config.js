@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
+
+const withTwin = require('./withTwin.js')
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true,
+    appDir: false,
   },
 
   webpack: (config, { dev, isServer }) => {
@@ -20,4 +23,4 @@ const nextConfig = {
 
 }
 
-module.exports = nextConfig
+module.exports = withTwin(nextConfig)
