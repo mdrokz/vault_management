@@ -97,7 +97,8 @@ const Card: FC<PropsWithChildren<Props>> = (props) => {
                 {props.type === 'Vault' && (
                     <>
                         <CardInfo>
-                            <span>📂</span>
+                            {/* <span>📂</span> */}
+                            <img src="/topic_icon.svg" width={24} height={24}></img>
                             {/* <TopicIcon /> */}
                             {/* Topics: {props.topicsCount} */}
                             <span>{props.topicsCount} topic{props.topicsCount === 1 ? '' : 's'}</span>
@@ -105,7 +106,8 @@ const Card: FC<PropsWithChildren<Props>> = (props) => {
                         <CardInfo>
                             {/* Notes: {props.notesCount}
                              */}
-                            <span>📝</span>
+                            {/* <span>📝</span> */}
+                            <img src="/note.svg" width={24} height={24}></img>
                             {/* <NoteIcon /> */}
                             <span>{props.notesCount} note{props.notesCount === 1 ? '' : 's'}</span>
                         </CardInfo>
